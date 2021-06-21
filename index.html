@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portflólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section  id="sec" class="banner">
+        <header>
+            <a href="#" class="logo" >Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Seja bem vindo!<br> Eu sou <span>João Carvalho</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus doloremque, odit adipisci eligendi cumque delectus repellendus. Doloribus delectus excepturi explicabo nulla quod harum sunt ipsa libero veritatis soluta aspernatur, alias recusandae eaque ex! Explicabo rerum odit odio? Consequatur placeat quod sit beatae, aliquid eum quas doloremque delectus, rerum quaerat voluptate!</p>
+            <a href="#">Saiba Mais</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="linkedin.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
